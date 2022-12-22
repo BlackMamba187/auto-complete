@@ -56,11 +56,7 @@ function App() {
 						</tr>
 					</thead>
 					<tbody>
-						{search(Data)
-							.filter((item) => {
-								return item;
-							})
-							.map((item, index) => (
+						{search(Data).map((item, index) => (
 								<tr key={index}>
 									<td>{item.first_name}</td>
 									<td>{item.last_name}</td>
